@@ -23,5 +23,5 @@
             "IndustriousMouse\\LaravelDotmailer": "src/"
         }
     },
-    "minimum-stability": "stable"
+    "minimum-stability": "dev"
 }
