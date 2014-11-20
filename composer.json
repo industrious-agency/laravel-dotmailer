@@ -10,8 +10,8 @@
     "require": {
         "php": ">=5.4.0",
         "illuminate/support": "4.2.*",
-        "industrious-mouse/dotmailer-api": "0.*",
-        "leewillis77/dotmailer-api": "@dev"
+        "leewillis77/dotmailer-api": "dev-master",
+        "industrious-mouse/dotmailer-api": "@dev"
     },
     "autoload": {
         "psr-0": {
