@@ -1,0 +1,27 @@
+{
+    "name": "industrious-mouse/laravel-dotmailer",
+    "description": "Laravel wrapper for the php-dotmailer library (https://github.com/industrious-mouse/php-dotmailer)",
+    "authors": [
+        {
+            "name": "Christian Thomas",
+            "email": "support@industriousmouse.co.uk"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "4.2.*",
+        "industrious-mouse/php-dotmailer": "dev-master"
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/industrious-mouse/php-dotmailer"
+        }
+    ],
+    "autoload": {
+        "psr-0": {
+            "IndustriousMouse\\LaravelDotmailer": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}
