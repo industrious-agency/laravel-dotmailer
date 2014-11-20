@@ -12,12 +12,6 @@
         "illuminate/support": "4.2.*",
         "industrious-mouse/dotmailer-api": "dev-master"
     },
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/industrious-mouse/dotmailer-api"
-        }
-    ],
     "autoload": {
         "psr-0": {
             "IndustriousMouse\\LaravelDotmailer": "src/"
