@@ -10,12 +10,12 @@
     "require": {
         "php": ">=5.4.0",
         "illuminate/support": "4.2.*",
-        "industrious-mouse/php-dotmailer": "dev-master"
+        "industrious-mouse/dotmailer-api": "dev-master"
     },
     "repositories": [
         {
             "type": "vcs",
-            "url": "https://github.com/industrious-mouse/php-dotmailer"
+            "url": "https://github.com/industrious-mouse/dotmailer-api"
         }
     ],
     "autoload": {
