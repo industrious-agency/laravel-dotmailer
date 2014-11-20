@@ -16,6 +16,5 @@
         "psr-0": {
             "IndustriousMouse\\LaravelDotmailer": "src/"
         }
-    },
-    "minimum-stability": "stable"
+    }
 }
