@@ -1,7 +1,7 @@
 Laravel Dotmailer
 =================
 
-A very basic Laravel wrapper for the [Dotmailer API Client by romanpitak](https://github.com/romanpitak/dotMailer-API-v2-PHP-client).
+A very basic Laravel wrapper for the [Dotmailer API Client](https://github.com/romanpitak/dotMailer-API-v2-PHP-client) by [romanpitak](https://github.com/romanpitak).
 
 ## Installation
 
