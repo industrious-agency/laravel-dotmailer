@@ -1,5 +1,6 @@
 <?php namespace IndustriousMouse\LaravelDotmailer;
 
+use DotMailer\Api\Container;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Config;
 
@@ -22,9 +23,16 @@ class LaravelDotmailerServiceProvider extends ServiceProvider {
 		// Boot the package
 		$this->package('industrious-mouse/laravel-dotmailer', 'dotmailer');
 
-		$this->app->singleton('dotmailer', function()
+		$config = Config::get('dotmailer::config');
+
+		$credentials = array(
+			Container::USERNAME			=> $config['username'],
+			Container::PASSWORD			=> $config['password']
+		);
+
+		$this->app->singleton('dotmailer', function() use($credentials)
 		{
-			return new Dotmailer;
+			return Container::newResources($credentials);
 		});
 	}
 
