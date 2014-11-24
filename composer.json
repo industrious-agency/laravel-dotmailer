@@ -9,8 +9,14 @@
     ],
     "require": {
         "php": ">=5.3.0",
-        "romanpitak/dotmailer-api-v2-client": "~1.0"
+        "romanpitak/dotmailer-api-v2-client": "dev-patch-1"
     },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/christian-thomas/dotMailer-API-v2-PHP-client"
+        }
+    ],
     "autoload": {
         "psr-0": {
             "IndustriousMouse\\LaravelDotmailer": "src/"
