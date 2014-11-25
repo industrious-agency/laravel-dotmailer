@@ -9,7 +9,7 @@
     ],
     "require": {
         "php": ">=5.3.0",
-        "romanpitak/dotmailer-api-v2-client": "dev-master"
+        "romanpitak/dotmailer-api-v2-client": "~1.0"
     },
     "autoload": {
         "psr-0": {
