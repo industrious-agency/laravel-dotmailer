@@ -12,22 +12,13 @@ use Illuminate\Support\ServiceProvider;
 class LaravelDotmailerServiceProvider extends ServiceProvider {
 
 	/**
-	 * Indicates if loading of the provider is deferred.
-	 *
-	 * @var bool
-	 */
-	protected $defer = false;
-
-	/**
 	 * Boot the service provider.
 	 *
 	 * @return void
 	 */
 	public function boot()
 	{
-		$this->publishes([
-				__DIR__.'/../config/dotmailer.php' => config_path('dotmailer.php'),
-		]);
+		$this->registerConfig();
 	}
 
 	/**
@@ -57,5 +48,16 @@ class LaravelDotmailerServiceProvider extends ServiceProvider {
 	public function provides()
 	{
 		return [];
+	}
+
+	/**
+	 * Registers Configuration
+	 */
+	private function registerConfig()
+	{
+		$configPath = __DIR__ . '/../config/dotmailer.php';
+
+		$this->publishes([$configPath => config_path('dotmailer.php')], 'dotmailer');
+		$this->mergeConfigFrom($configPath, 'dotmailer');
 	}
 }

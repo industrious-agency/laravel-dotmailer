@@ -7,7 +7,15 @@ A very basic Laravel wrapper for the [Dotmailer API Client](https://github.com/r
 
 To install, inside your project directory run the following from your terminal:
 
-	composer require "industrious-mouse/laravel-dotmailer": "dev-master"
+	composer require industrious-mouse/laravel-dotmailer
+
+Then load the service provider in your config/app.php:
+
+	IndustriousMouse\LaravelDotmailer\LaravelDotmailerServiceProvider::class
+
+You'll also need to publish the config, so you can provide your keys:
+
+	php artisan vendor:publish --provider="IndustriousMouse\LaravelDotmailer\LaravelDotmailerServiceProvider"
 
 ## Examples
 
@@ -23,7 +31,7 @@ To install, inside your project directory run the following from your terminal:
 			]
 		]
 	]);
-	
+
 	try
 	{
 	    $contact = Dotmailer::PostContacts($contact_data);
@@ -32,7 +40,7 @@ To install, inside your project directory run the following from your terminal:
 	{
 	    return $e;
 	}
-	
+
 ### Sending a Campaign to a contact
 
 

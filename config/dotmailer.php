@@ -2,7 +2,7 @@
 
 return [
 
-	'username'			=> '',
-	'password'			=> ''
+	'username'			=> env('DOTMAILER_USERNAME'),
+	'password'			=> env('DOTMAILER_PASSWORD')
 
 ];
