@@ -1,6 +1,7 @@
 {
     "name": "industrious-mouse/laravel-dotmailer",
     "description": "Laravel wrapper for the dotmailer-api-v2-client library (https://github.com/romanpitak/dotmailer-api-v2-client)",
+    "license": "MIT",
     "authors": [
         {
             "name": "Christian Thomas",
@@ -13,7 +14,7 @@
     },
     "autoload": {
         "psr-4": {
-            "IndustriousMouse\\LaravelDotmailer": "src/"
+            "IndustriousMouse\\LaravelDotmailer\\": "src/"
         }
     }
 }
