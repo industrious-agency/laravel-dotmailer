@@ -1,14 +1,12 @@
-<?php namespace IndustriousMouse\LaravelDotmailer\Facades;
+<?php
+
+namespace IndustriousMouse\LaravelDotmailer\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
 /**
- *
  * LaravelDotmailer Facade
- *
- * @category   Laravel Dotmailer
- * @version    1.0.0
- * @package    industrious-mouse/laravel-dotmailer
+ * @package IndustriousMouse\LaravelDotmailer
  */
 class Dotmailer extends Facade
 {

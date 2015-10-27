@@ -12,7 +12,7 @@
         "romanpitak/dotmailer-api-v2-client": "~1.1"
     },
     "autoload": {
-        "psr-0": {
+        "psr-4": {
             "IndustriousMouse\\LaravelDotmailer": "src/"
         }
     }
