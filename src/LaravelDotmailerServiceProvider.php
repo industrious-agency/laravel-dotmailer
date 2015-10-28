@@ -28,7 +28,7 @@ class LaravelDotmailerServiceProvider extends ServiceProvider {
 	 */
 	public function register()
 	{
-		$config = $this->app->config->get('dotmailer.config');
+		$config = $this->app->config->get('dotmailer');
 
 		$credentials = [
 			Container::USERNAME			=> $config['username'],
