@@ -8,9 +8,15 @@
             "email": "support@industriousmouse.co.uk"
         }
     ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/shortlist-digital/dotMailer-API-v2-PHP-client"
+        }
+    ],
     "require": {
         "php": ">=5.3.0",
-        "romanpitak/dotmailer-api-v2-client": "~1.1"
+        "romanpitak/dotmailer-api-v2-client": "dev-master"
     },
     "autoload": {
         "psr-4": {
