@@ -16,5 +16,12 @@
         "psr-4": {
             "IndustriousMouse\\LaravelDotmailer\\": "src/"
         }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "IndustriousMouse\\LaravelDotmailer\\LaravelDotmailerServiceProvider"
+            ]
+        }
     }
 }
